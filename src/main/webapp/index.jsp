@@ -1,95 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Employee Login</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f0f2f5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .login-container {
-      background: #fff;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      width: 320px;
-    }
-    .login-container h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #333;
-    }
-    .login-container label {
-      display: block;
-      margin-bottom: 6px;
-      font-weight: bold;
-      color: #555;
-    }
-    .login-container input {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      outline: none;
-      font-size: 14px;
-    }
-    .login-container input:focus {
-      border-color: #007bff;
-    }
-    .login-container button {
-      width: 100%;
-      padding: 12px;
-      background: #007bff;
-      border: none;
-      border-radius: 8px;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    .login-container button:hover {
-      background: #0056b3;
-    }
-    .forgot-password {
-      text-align: center;
-      margin-top: 10px;
-    }
-    .forgot-password a {
-      color: #007bff;
-      text-decoration: none;
-      font-size: 14px;
-    }
-    .forgot-password a:hover {
-      text-decoration: underline;
-    }
+    body { font-family: Arial, sans-serif; background: #f4f7fb; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+    .login-box { background: #fff; padding: 20px 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 300px; }
+    h2 { text-align: center; margin-bottom: 20px; }
+    label { display: block; margin-bottom: 5px; font-size: 14px; }
+    input { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; }
+    button { width: 100%; padding: 10px; background: #2563eb; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #1e4ed8; }
   </style>
 </head>
 <body>
-
-  <div class="login-container">
+  <div class="login-box">
     <h2>Employee Login</h2>
-    <form action="login_process.php" method="post">
+    <form>
       <label for="username">Username</label>
-      <input type="text" id="username" name="username" placeholder="Enter your username" required>
-
+      <input type="text" id="username" name="username" placeholder="Enter username" required>
+      
       <label for="password">Password</label>
-      <input type="password" id="password" name="password" placeholder="Enter your password" required>
-
+      <input type="password" id="password" name="password" placeholder="Enter password" required>
+      
       <button type="submit">Login</button>
-
-      <div class="forgot-password">
-        <a href="forgot_password.html">Forgot Password?</a>
-      </div>
     </form>
   </div>
-
 </body>
 </html>
